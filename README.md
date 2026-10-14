@@ -1,19 +1,65 @@
-# React + Vite
+# 🖥️ Multi-Agent Autonomous Job Search System - Frontend UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The interactive, responsive single-page application dashboard built with **React**, **Vite**, and modular styling layouts. This interface serves as the visualization and human-in-the-loop validation layer for the multi-agent automation backend loop.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🎨 User Interface & Page Workspaces
 
-## React Compiler
+The application maps frontend routes and interactive components directly to the specialized execution nodes inside the autonomous backend graph:
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+*   **`Landing Page` (`src/pages/Landing.jsx`)** — System onboarding landing interface including features overview and execution workflows layouts.
+*   **`Master Resume Entry` (`src/pages/MasterResume.jsx`)** — Secure playground to drop/upload your raw core PDF resume, executing the background parsing sequence.
+*   **`Interactive Workspace` (`src/pages/WorkSpace.jsx`)** — The core engine room where users process live iterations, submit continuous refinement feedback loops, and tweak agent outputs.
+*   **`Main Metrics Dashboard` (`src/pages/Dashboard.jsx`)** — Houses data aggregators, matching circles, scoring matrices, and macro tracking boards.
+*   **`Applications Ledger` (`src/pages/Applications.jsx`)** — Central tracking board for applications flagged as `ready` by the agent graph.
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+---
 
-## Expanding the ESLint configuration
+## 🏗️ UI Architecture & File Hierarchy
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+src/
+├── assets/          # Static layout assets and global branding marks
+├── components/      # Atomized, reusable functional layouts
+│   ├── dashboard/   # Specialized dashboard micro-cards (StatCard, RecommendedJobs)
+│   └── common/      # Global shell nodes (Sidebar, Topbar, Layout, SkillBadge)
+├── lib/             # Backend connector protocols
+│   ├── api.js       # Asynchronous Axios/Fetch engine tracking backend endpoints
+│   └── diff.js      # Text mutation and revision highlight calculations
+├── pages/           # View layout states mapped to agent execution checkpoints
+└── styles/          # Fragmented CSS definitions governing interface themes
+```
+
+---
+
+## 🛠️ Technical Implementation Stack
+
+*   **Core UI Engine:** React 19 (Functional Components, Hooks API)
+*   **Compilation & Scaffolding Bundler:** Vite
+*   **Code Sanity Layer:** ESLint + Prettier
+*   **Communication Gateway:** Asynchronous Fetch Client Engine (`src/lib/api.js`)
+
+---
+
+## 🚀 Local Deployment Instructions
+
+### 1. Replicate Project Locally
+Clone down the standalone user-interface layer repository:
+```bash
+git clone https://github.com
+cd multi-agent-job-search-frontend
+```
+
+### 2. Node Dependency Setup
+Install the necessary package blocks specified inside the `package.json` layout tree:
+```bash
+npm install
+```
+
+### 3. Local Development Server Execution
+Launch the local Hot-Module-Replacement (HMR) node engine instance:
+```bash
+npm run dev
+```
+The interface will boot up locally at **`http://localhost:5173`**. Ensure your FastAPI companion server is executing locally at **`http://127.0.0.1:8000`** to support end-to-end data fetching.
