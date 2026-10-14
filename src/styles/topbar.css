@@ -1,0 +1,81 @@
+.topbar {
+    position: fixed;
+
+    top: 0;
+    left: 280px;
+    right: 0;
+
+    height: 105px;
+
+    padding: 0 40px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgba(247, 249, 255, 0.75);
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+
+    z-index: 900;
+}
+
+.topbar h1 {
+    margin: 0 0 5px;
+
+    color: #10182b;
+
+    font-size: 27px;
+}
+
+.topbar p {
+    margin: 0;
+
+    color: #596981;
+
+    font-size: 15px;
+}
+
+.topbar-right {
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+}
+
+.icon-button {
+    width: 45px;
+    height: 45px;
+
+    border: 1px solid #d6ddea;
+
+    border-radius: 12px;
+
+    background: white;
+
+    font-size: 22px;
+
+    cursor: pointer;
+}
+
+.topbar-avatar {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #5b5cff;
+
+    color: white;
+
+    font-weight: 700;
+}

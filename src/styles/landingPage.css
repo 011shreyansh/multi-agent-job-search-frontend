@@ -1,0 +1,49 @@
+.landing-page {
+    background: linear-gradient(160deg,rgba(147, 181, 220, 0.362),rgb(224, 231, 233), rgba(122, 230, 223, 0.526));
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     
+}
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    position: relative;
+    top: 30px;
+    /* border: 2px solid black; */
+    width: 80%;
+}
+.nav-link{
+    /* border: 2px solid black; */
+    width: 450px;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+     
+    
+}
+.nav-link a{
+    text-decoration: none;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-size: 22px;
+     color: 58, 117, 176;
+}
+.nav-link a:hover{
+    color: rgb(38, 119, 119);
+}
+.pack{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    width: 250px;
+    /* border: 2px solid black; */
+}
+
+.login-btn{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    color: rgb(58, 117, 176);
+  }

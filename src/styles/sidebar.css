@@ -1,0 +1,154 @@
+.sidebar {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 280px;
+    height: 100vh;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #080f20;
+    color: white;
+
+    z-index: 1000;
+}
+
+
+/* =========================
+   LOGO
+   ========================= */
+
+.sidebar-logo {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    margin-bottom: 45px;
+
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.logo-box {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 13px;
+
+    background: linear-gradient(
+        135deg,
+        #635bff,
+        #22cddd
+    );
+}
+
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.sidebar-nav a {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 14px 16px;
+
+    border-radius: 12px;
+
+    color: #9ba8c0;
+
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+.sidebar-nav a:hover {
+    background: #121b32;
+    color: white;
+}
+
+.sidebar-nav a.active {
+    background: #1a2440;
+    color: white;
+
+    box-shadow: inset 3px 0 0 #5b5cff;
+}
+
+
+/* =========================
+   BOTTOM PROFILE
+   ========================= */
+
+.sidebar-bottom {
+    margin-top: auto;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #202a40;
+}
+
+.profile-mini {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.profile-avatar {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #5b5cff;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.profile-mini div:last-child {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.profile-mini strong {
+    font-size: 14px;
+}
+
+.profile-mini span {
+    color: #8996ad;
+
+    font-size: 11px;
+}

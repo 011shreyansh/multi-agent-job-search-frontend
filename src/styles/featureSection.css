@@ -1,0 +1,167 @@
+.feature-section {
+    width: 90%;
+    margin: 100px auto;
+}
+
+.feature-heading p {
+    margin: 0 0 14px;
+
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    color: #5b5cff;
+}
+
+.feature-heading h2 {
+    margin: 0 0 45px;
+
+    font-size: 46px;
+    line-height: 1.1;
+    font-weight: 700;
+
+    color: #10182b;
+}
+
+.feature-layout {
+    display: grid;
+    grid-template-columns: 1.05fr 1.7fr;
+    gap: 20px;
+}
+
+.feature-main-card,
+.feature-card {
+    position: relative;
+
+    border-radius: 24px;
+    background: linear-gradient(white,rgb(223, 231, 246));
+
+    border: 1px solid #edf0f6;
+    box-sizing: border-box;
+}
+
+.feature-main-card {
+    min-height: 500px;
+    padding: 34px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    overflow: hidden;
+}
+
+.feature-main-card::before {
+    content: "";
+
+    position: absolute;
+    top: -120px;
+    left: 80px;
+
+    width: 320px;
+    height: 320px;
+
+    background: rgba(110, 100, 255, 0.18);
+    filter: blur(80px);
+    border-radius: 50%;
+}
+
+.feature-card {
+    min-height: 250px;
+    padding: 34px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.feature-icon {
+    width: 56px;
+    height: 56px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    color: white;
+
+    background: linear-gradient(
+        135deg,
+        #635bff,
+        #24bddd
+    );
+}
+
+.feature-main-card .feature-icon {
+    margin-bottom: 24px;
+}
+
+.feature-card h3,
+.feature-main-card h3 {
+    margin: 0 0 12px;
+
+    font-size: 23px;
+    font-weight: 700;
+
+    color: #121a2d;
+}
+
+.feature-card p,
+.feature-main-card p {
+    margin: 0;
+
+    max-width: 430px;
+
+    font-size: 17px;
+    line-height: 1.65;
+
+    color: #596981;
+}
+
+.feature-main-card h3 {
+    font-size: 24px;
+}
+
+.feature-arrow {
+    position: absolute;
+    right: 28px;
+    bottom: 28px;
+
+    color: #5b5cff;
+}
+
+@media (max-width: 900px) {
+    .feature-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-main-card {
+        min-height: 350px;
+    }
+}
+
+@media (max-width: 600px) {
+    .feature-section {
+        width: 92%;
+    }
+
+    .feature-heading h2 {
+        font-size: 34px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+}
+.hover:hover{
+    transform: translateY(-5px);
+    box-shadow: 2px 2px 10px rgb(129, 129, 194);
+}

@@ -1,0 +1,16 @@
+.app-layout {
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+/* Main page area */
+
+.main-content {
+    margin-left: 280px;
+    padding-top: 100px;
+
+    min-height: 100vh;
+
+    box-sizing: border-box;
+}

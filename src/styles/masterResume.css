@@ -1,0 +1,450 @@
+.master-resume {
+    padding: 32px 38px 50px;
+    box-sizing: border-box;
+}
+
+
+/* HEADER */
+
+.master-resume-header {
+    margin-bottom: 28px;
+}
+
+.master-resume-header h1 {
+    margin: 0 0 6px;
+
+    font-size: 30px;
+    color: #10182b;
+}
+
+.master-resume-header p {
+    margin: 0;
+
+    color: #596981;
+    font-size: 15px;
+}
+
+
+/* MAIN LAYOUT */
+
+.resume-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(320px, 0.95fr);
+    gap: 24px;
+}
+
+
+/* LEFT CARD */
+
+.resume-management-card {
+    padding: 28px;
+
+    border: 1px solid #dce3ef;
+    border-radius: 22px;
+
+    background: white;
+
+    box-sizing: border-box;
+}
+
+
+.resume-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 30px;
+
+    margin-bottom: 24px;
+}
+
+
+.resume-intro h2 {
+    margin: 16px 0 10px;
+
+    font-size: 28px;
+    color: #131c31;
+}
+
+.resume-intro p {
+    margin: 0;
+
+    max-width: 550px;
+
+    color: #5d6c82;
+
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* STATUS */
+
+.resume-status {
+    width: fit-content;
+
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 7px 12px;
+
+    border: 1px solid #a7e1c7;
+    border-radius: 20px;
+
+    background: #ecfbf3;
+
+    color: #087447;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* FILE */
+
+.uploaded-file {
+    min-width: 330px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 14px;
+
+    border: 1px solid #dbe2ec;
+    border-radius: 14px;
+
+    box-sizing: border-box;
+}
+
+.uploaded-file > svg {
+    color: #5b5cff;
+    flex-shrink: 0;
+}
+
+.uploaded-file div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+
+    flex: 1;
+}
+
+.uploaded-file strong {
+    font-size: 13px;
+    color: #172033;
+}
+
+.uploaded-file span {
+    font-size: 11px;
+    color: #69778c;
+}
+
+.parsed-badge {
+    padding: 7px 10px;
+
+    border-radius: 16px;
+
+    background: #e7f8ee;
+
+    color: #087447 !important;
+
+    font-size: 11px !important;
+    font-weight: 700;
+}
+
+
+/* UPLOAD AREA */
+
+.resume-upload-area {
+    min-height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 1.5px dashed #9eabff;
+    border-radius: 18px;
+
+    background: #f8f9ff;
+
+    text-align: center;
+}
+
+.resume-upload-area > svg {
+    color: #5b5cff;
+}
+
+.resume-upload-area h3 {
+    margin: 12px 0 5px;
+
+    color: #172033;
+    font-size: 16px;
+}
+
+.resume-upload-area p {
+    margin: 0 0 15px;
+
+    color: #68768c;
+    font-size: 13px;
+}
+
+.resume-upload-area button {
+    padding: 12px 20px;
+
+    border: none;
+    border-radius: 24px;
+
+    background: white;
+
+    color: #172033;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+/* RESUME PREVIEW */
+
+.resume-preview {
+    width: 78%;
+
+    min-height: 500px;
+
+    margin: 24px auto 0;
+
+    padding: 55px 65px;
+
+    box-sizing: border-box;
+
+    background: white;
+
+    border: 1px solid #dce2eb;
+
+    box-shadow: 0 12px 30px rgba(40, 55, 90, 0.08);
+}
+
+.resume-preview h2 {
+    margin: 0 0 14px;
+
+    text-align: center;
+
+    font-size: 27px;
+
+    color: #182033;
+}
+
+.preview-summary {
+    margin: 0;
+
+    text-align: center;
+
+    font-size: 12px;
+
+    color: #354158;
+}
+
+.resume-preview hr {
+    margin: 16px 0;
+
+    border: none;
+    border-top: 1px solid #b8bec9;
+}
+
+.resume-preview h3 {
+    margin: 0;
+
+    font-size: 12px;
+
+    letter-spacing: 1.5px;
+
+    color: #182033;
+}
+
+.resume-preview > strong {
+    font-size: 13px;
+    color: #182033;
+}
+
+.resume-preview > p:last-child {
+    font-size: 12px;
+    color: #4f5d72;
+}
+
+
+/* RIGHT PROFILE */
+/* .extracted-profile {
+    display: none !important;
+} */
+
+.extracted-profile {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    padding: 28px;
+    border: 1px solid #dce3ef;
+    border-radius: 22px;
+    background: white;
+    box-sizing: border-box;
+}
+
+
+.profile-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding-bottom: 18px;
+
+    border-bottom: 1px solid #dce2ea;
+}
+
+.profile-header h2 {
+    margin: 0 0 5px;
+
+    color: #151e31;
+
+    font-size: 21px;
+}
+
+.profile-header p {
+    margin: 0;
+
+    color: #66758a;
+
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.edit-profile {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 10px 15px;
+
+    border: 1px solid #d5ddea;
+
+    border-radius: 20px;
+
+    background: white;
+
+    color: #182033;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+/* PROFILE SECTIONS */
+
+ 
+.profile-section {
+    display: block !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 20px 0;
+    border-bottom: 1px solid #dce2ea;
+}
+ 
+
+.profile-label {
+    width: max-content;
+    display: block;
+    margin-bottom: 12px;
+    color: #66758a;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+} 
+
+.profile-section strong {
+    color: #172033;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* SKILLS */
+
+.skill-list {
+    
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+.skill-list span {
+    padding: 7px 10px;
+
+    border: 1px solid #cbd4ff;
+    border-radius: 10px;
+
+    background: #f5f6ff;
+
+    color: #4f5cff;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1100px) {
+
+    .resume-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .resume-intro {
+        flex-direction: column;
+    }
+
+    .uploaded-file {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .resume-preview {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .master-resume {
+        padding: 24px 18px;
+    }
+
+    .resume-management-card,
+    .extracted-profile {
+        padding: 20px;
+    }
+
+    .resume-preview {
+        width: 100%;
+        padding: 35px 25px;
+    }
+
+    .resume-intro h2 {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,25 @@
+.logo{
+    height: 50px;
+    width: 180px;
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid black; */
+    align-items: center;
+    justify-content: space-evenly;
+}
+.box{
+    /* border: 2px solid black; */
+    color: antiquewhite;
+    border-radius: 10px;
+    height: 46px;
+    width: 46px;
+    font-size: 30px;
+    display: flex;
+    /* text-align: center; */
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(60deg,rgb(57, 95, 139),rgb(47, 141, 181),rgb(30, 56, 116));
+}
+h2{
+    color: rgb(31, 31, 206);
+}

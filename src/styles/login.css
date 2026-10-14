@@ -1,0 +1,348 @@
+.login-page {
+    width: calc(100% - 40px);
+    max-width: 1200px;
+
+    min-height: calc(100vh - 40px);
+
+    margin: 20px auto;
+
+    display: flex;
+
+    background: white;
+
+    border-radius: 32px;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+    box-shadow: 0 20px 60px rgba(50, 70, 120, 0.12);
+}
+
+ 
+
+.login-left {
+    width: 55%;
+    min-height: 100%;
+
+    padding: 55px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #080f20;
+}
+
+
+.login-logo {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+
+.logo-box {
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: linear-gradient(135deg, #635bff, #22cddd);
+    color: white;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+
+.login-left-content {
+    margin-top: 90px;
+
+    max-width: 600px;
+}
+
+
+.login-badge {
+    display: inline-block;
+
+    padding: 7px 14px;
+
+    border-radius: 20px;
+
+    background: #f0f2ff;
+
+    color: #5b5cff;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+.login-left h1 {
+    margin: 32px 0 22px;
+
+    font-size: 55px;
+    line-height: 1.08;
+    font-weight: 700;
+
+    color: #f5f7ff;
+}
+
+
+.login-left-content p {
+    margin: 0;
+
+    max-width: 580px;
+
+    color: #91a0bc;
+
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+ 
+.login-match-card {
+    margin-top: auto;
+
+    width: 100%;
+    max-width: 560px;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+
+    border: 1px solid #27334d;
+
+    border-radius: 18px;
+
+    background: #151d2e;
+}
+
+
+.match-icon {
+    width: 30px;
+    height: 30px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #15d9e8;
+
+    border-radius: 50%;
+
+    color: #15d9e8;
+
+    font-weight: 700;
+}
+
+
+.login-match-card div:last-child {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+
+.login-match-card strong {
+    color: #dce3f1;
+
+    font-size: 18px;
+}
+
+
+.login-match-card span {
+    color: #8c9ab3;
+
+    font-size: 16px;
+}
+ 
+.login-right {
+    width: 45%;
+    min-height: 100%;
+
+    padding: 50px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: white;
+}
+
+
+.login-form-container {
+    width: 100%;
+    max-width: 420px;
+}
+
+
+.login-form-container h2 {
+    margin: 0;
+
+    color: #121a2d;
+
+    font-size: 38px;
+}
+
+
+.login-subtitle {
+    margin: 10px 0 28px;
+
+    color: #596981;
+
+    font-size: 19px;
+}
+ 
+
+.login-form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.login-form-container label {
+    margin-bottom: 9px;
+
+    color: #182033;
+
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+.login-form-container input[type="email"],
+.login-form-container input[type="password"] {
+    width: 100%;
+
+    height: 58px;
+
+    margin-bottom: 24px;
+
+    padding: 0 17px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #cfd8e8;
+
+    border-radius: 13px;
+
+    background: #f7f9fe;
+
+    color: #172033;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+
+.login-form-container input[type="email"]:focus,
+.login-form-container input[type="password"]:focus {
+    border-color: #5b5cff;
+}
+
+ 
+
+.login-options {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 26px;
+}
+
+
+.remember {
+    display: flex !important;
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 0 !important;
+}
+
+
+.remember input {
+    width: 18px;
+    height: 18px;
+
+    margin: 0;
+}
+
+
+.login-options a,
+.signup-text a {
+    color: #554dff;
+
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+ 
+
+.login-button {
+    width: 100%;
+    height: 52px;
+
+    border: none;
+
+    border-radius: 28px;
+
+    background: #5b5cff;
+
+    color: white;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow: 0 12px 30px rgba(91, 92, 255, 0.25);
+}
+
+
+.login-button span {
+    margin-left: 8px;
+
+    font-size: 22px;
+}
+
+ 
+
+.signup-text {
+    margin-top: 32px;
+
+    text-align: center;
+
+    color: #596981;
+
+    font-size: 16px;
+}
+
+
+.signup-text a {
+    margin-left: 7px;
+}
+
+ 
